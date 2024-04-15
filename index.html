@@ -1,58 +1,179 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Mon Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-    
-    <header>
-        <a href="">
-            <img src="https://th.bing.com/th/id/OIG2.k58mi9CYgBEo6lvNEP3g?pid=ImgGn" alt="profil">
-        </a>
-        <nav>
-            <a href="">accueil</a>
-            <a href="">Mes projets</a>
-            <a href="">A propos de moi</a>
-            <a href="">Parametres</a>
-        </nav>
-    </header>
-    <section>
-        <h1>HOLA</h1>
-        <h2>A propos de moi</h2>
-        <p>Je suis passionné.</p>
-    </section>
-    <section>
-        <h2>Mes compétences</h2>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-        </ul>
-    </section>
-    <section>
-        <h2>Mes projets</h2>
-        <p>Enzo De Simone
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio d'Enzo De-Simone</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body {
+        color: white;
+        font-family: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAQMAAAAlPW0iAAAABlBMVEX////w8PBJB7MPAAAAD0lEQVQI12Ng+I8V4RIGAH6/D/EIQoVRAAAAAElFTkSuQmCC);
+      }
 
-            👋 Salut ! Je suis Enzo, un passionné de la science, de la paléontologie, du sport, de l’esport et des activités en plein air. J’ai 17 ans et je nourris l’ambition de devenir entrepreneur. Mon parcours est marqué par ma curiosité pour les découvertes scientifiques, mon amour pour les fossiles, et mon goût pour l’aventure.
-            Mes centres d’intérêt :
-            
-                🌍 Science : J’adore explorer les mystères de l’univers, des particules subatomiques aux galaxies lointaines.
-                🦖 Paléontologie : Les dinosaures et les créatures anciennes m’ont toujours fasciné. Je collectionne des fossiles et je suis toujours à l’affût des dernières découvertes.
-                🏃‍♂️ Sport : Que ce soit le football, la course à pied ou le tennis, je trouve l’équilibre dans le mouvement et l’effort physique.
-                🎮 Esport : Je suis également passionné par l’esport. Les compétitions, les stratégies et les jeux vidéo font partie de mon quotidien.
-                🌊 Activités en plein air : J’aime explorer la nature, que ce soit en plongeant dans les eaux cristallines de la mer ou en randonnant dans les montagnes.
-                🏝️ Polynésie française : Mon rêve est de vivre en Polynésie française, entouré de paysages paradisiaques et d’une culture riche.
-            
-            Projets en cours :
-            
-                🚀 Startup : Je travaille actuellement sur le lancement d’une startup qui allie mes passions et mes compétences.
-            </p>
-    </section>
+      header {
+        background-image: url("https://www.psdgraphics.com/wp-content/uploads/2020/06/turquoise-metal-texture.jpg");
+        background-size: cover;
+        padding: 20px;
+        text-align: center;
+        position: relative; /* Ajout */
+        z-index: 1; /* Ajout */
+      }
+
+      header h1 {
+        margin: 0;
+        padding: 10px;
+      }
+
+      nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      nav ul li {
+        display: inline;
+        margin-right: 20px;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+      }
+
+      /* Style pour la vidéo */
+      #video-background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -1;
+      }
+
+      /* Ajout de marges pour compenser la zone de la vidéo */
+      main {
+        margin-top: 100vh;
+        padding-top: 20px;
+        position: relative; /* Ajout */
+        z-index: 2; /* Ajout */
+      }
+
+      /* Ajout de styles pour chaque section */
+      section {
+        padding-bottom: 50px;
+      }
+
+      footer {
+        position: relative; /* Ajout */
+        z-index: 3; /* Ajout */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Vidéo en arrière-plan -->
+    <video autoplay muted loop id="video-background">
+      <source
+        src="https://media.istockphoto.com/id/1459585081/fr/vid%C3%A9o/grille-de-r%C3%A9seau-abstrait-num%C3%A9rique-sur-la-terre-intelligence-artificielle-r%C3%A9seau-neuronal.mp4?s=mp4-640x640-is&k=20&c=mxXA8D62wOb0s8l3XxyszME9j3WkUl1IMgz-wKylF-o="
+        type="video/mp4"
+      />
+      Your browser does not support the video tag.
+    </video>
+
+    <header>
+      <div class="container">
+        <h1>Enzo De-Simone</h1>
+        <nav>
+          <ul>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="hero">
+        <div class="container">
+          <h2>Bienvenue sur mon Portfolio</h2>
+          <p>Découvrez mes créations et mon parcours.</p>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="container">
+          <h2>À propos de moi</h2>
+          <p>
+            🌴🚀 Aspiring Polynesian Entrepreneur | Future Webpreneur &
+            Paleontology Enthusiast 🦖💻
+          </p>
+          <br />
+          <p>
+            👋 Salut, je suis Enzo De-Simone, un passionné de 17 ans qui rêve de
+            créer son entreprise en Polynésie française. Mon objectif ?
+            Révolutionner le monde du e-commerce en combinant ma passion pour la
+            paléontologie et le potentiel illimité du web.
+          </p>
+          <p>
+            🌊 Amoureux des activités en plein air et aquatiques, je puise mon
+            inspiration dans les vastes océans et les richesses de la nature
+            polynésienne. J'adore m'immerger dans la culture locale, explorer de
+            nouveaux horizons et partager de bons moments avec une ambiance
+            festive.
+          </p>
+          <p>
+            💼 Actuellement en train de façonner mon avenir, je suis ouvert aux
+            opportunités de collaboration, d'apprentissage et de networking.
+            Rejoignez-moi dans cette aventure entrepreneuriale où le dynamisme,
+            la créativité et la bonne humeur sont au rendez-vous !
+          </p>
+        </div>
+      </section>
+
+      <section id="portfolio">
+        <div class="container">
+          <h2>Portfolio</h2>
+          <div class="project">
+            <img src="project1.jpg" alt="Nom du projet 1" />
+            <h3>Nom du projet 1</h3>
+            <p>Description du projet 1</p>
+          </div>
+          <!-- Ajoutez d'autres projets similaires -->
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="container">
+          <h2>Contact</h2>
+          <p>
+            Vous pouvez me contacter à l'adresse email suivante :
+            <a href="mailto:example@example.com">kingenzobueno@gmail.com</a>
+          </p>
+          <p>Ou via mes réseaux sociaux :</p>
+          <ul>
+            <li>
+              <a
+                href="https://r.search.yahoo.com/_ylt=Awr.hCxGDRxm_YcTKqOPAwx.;_ylu=Y29sbwMEcG9zAzMEdnRpZAMEc2VjA3Ny/RV=2/RE=1713143238/RO=10/RU=https%3a%2f%2fplay.google.com%2fweb%2fstore%2fapps%2fdetails%3fid%3dcom.whatsapp%26hl%3dfr/RK=2/RS=pqxTEhLdt5R4kPWLZ2_4Z9F5zk0-"
+                >whatsapp</a
+              >
+            </li>
+            <li><a href="https://github.com/enzodesimone">GitHub</a></li>
+            <!-- Ajoutez d'autres liens vers vos réseaux sociaux -->
+          </ul>
+        </div>
+      </section>
+    </main>
+
     <footer>
-        <p>Contacte-moi ! enzo.monmeneo@latoile.em-lyon.com</p>
+      <div class="container">
+        <p>&copy; 2024 Enzo De Simone - Tous droits réservés</p>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
 
 
