@@ -1,62 +1,64 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0; /* Couleur de fond pour le corps */
-  }
-  
-  .container {
-    width: 90%;
-    margin: 0 auto;
-  }
-  
-  header {
-    background-color: #5fd6d1; /* Couleur turquoise claire */
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-    border-bottom: 2px solid #fff; /* Bordure blanche en bas */
-    border-radius: 20px; /* Coins arrondis */
-  }
-  
-  header nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  header nav ul li {
-    display: inline;
-    margin-right: 20px;
-  }
-  
-  header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  section {
-    padding: 50px 0;
-  }
-  
-  section h2 {
-    text-align: center;
-  }
-  
-  .project {
-    margin-bottom: 40px;
-  }
-  
-  .project img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-  }
-  
-  footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-  }
-  
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0; /* Couleur de fond pour le corps */
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #5fd6d1; /* Couleur turquoise claire */
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  border-bottom: 2px solid #fff; /* Bordure blanche en bas */
+  border-radius: 20px; /* Coins arrondis */
+}
+
+header nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+section {
+  padding: 50px 0;
+}
+
+section h2 {
+  text-align: center;
+}
+
+.project {
+  margin-bottom: 40px;
+}
+
+.project img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+
+/*test*/
